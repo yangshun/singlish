@@ -1,6 +1,9 @@
 # Singlish 🇸🇬
 
-LLMs are too verbose, they waste tokens, waste your time reading them, just wasteful overall. It's more efficient to get them to reply in a more concise manner. Singlish is one of those ways.
+AI output tend to be overly verbose, they waste tokens, waste your time reading them. It's more efficient to get them to reply in a more concise manner. Singlish is one of those ways.
+
+> [!NOTE]
+> Inspired by [Caveman](https://github.com/JuliusBrussee/caveman). I felt that skills are overkill when all I want is a change in tone, hence this repo.
 
 ## Example
 
