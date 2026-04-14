@@ -36,7 +36,7 @@ These instructions guide your AI agent. They do not change your application code
 > [!TIP]
 > Singlish might not be for everyone. If that's the case, just remove the first line, conciseness is still useful.
 
-## Where to add it
+## Customize your coding agent
 
 | Scope | Where | Commit it? | Best for |
 | --- | --- | --- | --- |
@@ -45,16 +45,58 @@ These instructions guide your AI agent. They do not change your application code
 
 I recommend adding it for your personal settings first, only add to your repositories if you like it.
 
+For coding agents, the relevant docs are:
+
+- [AGENTS.md](https://agents.md/),
+- [Codex `AGENTS.md`](https://developers.openai.com/codex/guides/agents-md),
+- [Claude Code memory / `CLAUDE.md`](https://code.claude.com/docs/en/memory),
+- [GitHub Copilot repository instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions),
+and
+- [GitHub Copilot personal instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-personal-instructions).
+
+## ChatGPT and Claude
+
+If you want this outside coding agents, you can set it directly in ChatGPT and Claude too.
+
+### ChatGPT
+
+For ChatGPT, the main knob is **Custom Instructions**. See [Custom Instructions](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgp).
+
+1. Open `Settings`.
+2. Go to `Personalization`.
+3. Turn on customization.
+4. Paste the recommended snippet into `Custom Instructions`.
+
+Notes:
+
+- Custom Instructions apply across all chats.
+- They update future replies immediately.
+- If you also set a ChatGPT personality under `Base style and tone`, treat that as a broad vibe only. For direct rules like "use Singlish" or "be concise," Custom Instructions matter more. See [Customizing Your ChatGPT Personality](https://help.openai.com/en/articles/11899719-customizing-your-chatgpt-personality).
+
+### Claude
+
+Claude has two useful knobs: **Profile Preferences** and **Styles**. See [Understanding Claude's personalization features](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features).
+
+For account-wide preferences:
+
+1. Click your initials in the lower-left corner.
+2. Open `Settings`.
+3. Under `What preferences should Claude consider in responses?`, paste the recommended snippet.
+
+For response style:
+
+1. Open the `Search and tools` menu.
+2. Choose `Use style`.
+3. Pick `Concise`, or create a custom style with your own instructions.
+
+Notes:
+
+- Use **Profile Preferences** for persistent account-wide guidance.
+- Use **Styles** to control how replies are delivered.
+- If you want exact phrasing and tone, create a custom style and use Claude's advanced custom instructions there. See [Configure and use styles](https://support.claude.com/en/articles/10181068-configure-and-use-styles).
+
 ## Things to note
 
 - Putting personal tone rules into repo-shared files when the rest of the team may not want them.
 - Telling the agent to use Singlish in code comments, commit messages, or docs when those should stay in standard English.
 - Beware of personal and repo instructions conflict with each other.
-
-## Further reading
-
-- [AGENTS.md](https://agents.md/)
-- [Codex: Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
-- [Claude Code: How Claude remembers your project](https://code.claude.com/docs/en/memory)
-- [GitHub Copilot: Adding repository custom instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
-- [GitHub Copilot: Adding personal custom instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-personal-instructions)
