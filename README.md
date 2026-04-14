@@ -1,4 +1,4 @@
-# Singlish
+# Singlish 🇸🇬
 
 LLMs are too verbose, they waste tokens, waste your time reading them, just wasteful overall. It's more efficient to get them to reply in a more concise manner. Singlish is one of those ways.
 
@@ -8,11 +8,11 @@ Same request:
 
 > Explain how to fix a failing test.
 
-Without tone/style instructions:
+**Without tone/style instructions** 😥:
 
 > It looks like the failing test may be caused by a mismatch between the expected and actual values. I recommend checking the assertion, reviewing recent code changes, and running the test in isolation to gather more information.
 
-With direct instructions + Singlish:
+**With direct instructions + Singlish** 😌:
 
 > The assertion likely outdated lah. Run the test alone, check the actual output, then update either the code or the expected value.
 
@@ -34,7 +34,7 @@ Use the following as the single source of truth for tone and style:
 These instructions guide your AI agent. They do not change your application code or runtime APIs. You should tweak them to your liking.
 
 > [!TIP]
-> Singlish might not be for everyone. If that's the case, just remove the first line.
+> Singlish might not be for everyone. If that's the case, just remove the first line, conciseness is still useful.
 
 ## Where to add it
 
@@ -43,9 +43,9 @@ These instructions guide your AI agent. They do not change your application code
 | Personal/global | `~/.codex/AGENTS.md`, `~/.claude/CLAUDE.md`, GitHub Copilot personal instructions | No | Your own defaults across projects |
 | Repo-shared | `AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md` | Yes | Team-wide defaults |
 
-I recommend setting it on your personal settings first, not committing into your repository yet.
+I recommend adding it for your personal settings first, only add to your repositories if you like it.
 
-## Common mistakes
+## Things to note
 
 - Putting personal tone rules into repo-shared files when the rest of the team may not want them.
 - Telling the agent to use Singlish in code comments, commit messages, or docs when those should stay in standard English.
